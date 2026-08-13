@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Moniiii ❤️</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Trebuchet MS",Arial,sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:
+    radial-gradient(circle at 10% 20%,#fff 0 2%,transparent 3%),
+    linear-gradient(135deg,#ffd1e3,#ffe8f1,#f6d9ff,#ffdce9);
+    background-size:auto,400% 400%;
+    animation:bgMove 12s ease infinite;
+    color:#642044;
+    overflow-x:hidden;
+}
+
+@keyframes bgMove{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/* ---------- SLIDES ---------- */
+
+.slide{
+    display:none;
+    min-height:100vh;
+    padding:30px 15px 60px;
+    position:relative;
+    overflow:hidden;
+    animation:slideIn .8s ease;
+}
+
+.slide.active{
+    display:block;
+}
+
+@keyframes slideIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ---------- HEADINGS ---------- */
+
+h1{
+    text-align:center;
+    font-size:44px;
+    color:#d63384;
+    margin:25px 0 15px;
+    text-shadow:0 3px 12px #fff;
+}
+
+h2{
+    text-align:center;
+    font-size:31px;
+    color:#c21868;
+    margin:20px 0 25px;
+}
+
+.subtitle{
+    max-width:700px;
+    margin:10px auto 25px;
+    text-align:center;
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* ---------- BUTTON ---------- */
+
+.btn{
+    display:block;
+    margin:28px auto;
+    padding:15px 30px;
+    border:none;
+    border-radius:35px;
+    color:white;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+    background:linear-gradient(90deg,#ff4f9a,#c94cff);
+    box-shadow:0 8px 22px #a92e6840;
+    transition:.25s;
+}
+
+.btn:hover{
+    transform:scale(1.06);
+}
+
+.btn:active{
+    transform:scale(.96);
+}
+
+.locked{
+    background:linear-gradient(90deg,#555,#888);
+}
+
+/* ---------- PHOTOS ---------- */
+
+.main-photo{
+    display:block;
+    width:min(340px,92%);
+    height:370px;
+    object-fit:cover;
+    margin:20px auto;
+    border:8px solid white;
+    border-radius:28px;
+    box-shadow:0 12px 35px #a8326745;
+}
+
+.photo-grid{
+    width:min(950px,100%);
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+.memory-card{
+    background:#ffffffb8;
+    border:3px solid white;
+    border-radius:24px;
+    padding:12px;
+    box-shadow:0 10px 28px #9e306640;
+    backdrop-filter:blur(8px);
+}
+
+.memory-card img{
+    display:block;
+    width:100%;
+    height:245px;
+    object-fit:cover;
+    border-radius:17px;
+}
+
+.memory-card p{
+    text-align:center;
+    padding:14px 5px 5px;
+    font-size:16px;
+    line-height:1.65;
+}
+
+/* ---------- BIRTHDAY MESSAGE ---------- */
+
+.birthday-text,
+.final-text{
+    max-width:900px;
+    margin:30px auto;
+    padding:27px;
+    border:3px solid white;
+    border-radius:27px;
+    background:#ffffffaa;
+    box-shadow:0 10px 30px #9e306630;
+    text-align:center;
+    line-height:1.85;
+    font-size:18px;
+}
+
+/* ---------- BALLOONS ---------- */
+
+.balloon-area{
+    max-width:750px;
+    margin:45px auto;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:40px;
+}
+
+.balloon-box{
+    text-align:center;
+    cursor:pointer;
+}
+
+.balloon{
+    width:105px;
+    height:135px;
+    border-radius:50% 50% 45% 45%;
+    position:relative;
+    box-shadow:
+        inset -12px -15px 20px #0002,
+        0 10px 25px #87355c40;
+    animation:float 2.5s ease-in-out infinite;
+}
+
+.balloon:before{
+    content:"";
+    position:absolute;
+    width:15px;
+    height:15px;
+    background:inherit;
+    bottom:-4px;
+    left:45px;
+    transform:rotate(45deg);
+}
+
+.balloon:after{
+    content:"";
+    position:absolute;
+    width:2px;
+    height:60px;
+    background:#7b5263;
+    left:50%;
+    top:100%;
+}
+
+.b1{
+    background:#ff579b;
+}
+
+.b2{
+    background:#a65cff;
+}
+
+.b3{
+    background:#ff896c;
+}
+
+.b4{
+    background:#52c9ff;
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0) rotate(-2deg);
+    }
+
+    50%{
+        transform:translateY(-16px) rotate(2deg);
+    }
+}
+
+.balloon.popping{
+    animation:pop .45s forwards;
+}
+
+@keyframes pop{
+    0%{
+        transform:scale(1);
+        opacity:1;
+    }
+
+    60%{
+        transform:scale(1.4);
+        opacity:1;
+    }
+
+    100%{
+        transform:scale(0);
+        opacity:0;
+    }
+}
+
+.balloon-word{
+    margin-top:15px;
+    font-size:20px;
+    font-weight:bold;
+    color:#d63384;
+    opacity:0;
+    transform:scale(.5);
+    transition:.4s;
+}
+
+.balloon-word.show{
+    opacity:1;
+    transform:scale(1);
+}
+
+#balloonMessage{
+    display:none;
+    max-width:750px;
+    margin:25px auto;
+    padding:22px;
+    border-radius:25px;
+    border:3px solid white;
+    background:#ffffffb8;
+    text-align:center;
+    font-size:19px;
+    line-height:1.7;
+}
+
+/* ---------- ALWAYS YOURS ---------- */
+
+.always-yours{
+    text-align:center;
+    font-family:cursive;
+    font-size:44px;
+    color:#c21868;
+    margin:35px 0;
+    text-shadow:0 3px 10px white;
+}
+
+/* ---------- CUTE STICKERS ---------- */
+
+.sticker{
+    position:absolute;
+    font-size:42px;
+    z-index:2;
+    pointer-events:none;
+    animation:stickerFloat 4s ease-in-out infinite;
+}
+
+.sticker1{
+    top:7%;
+    left:3%;
+}
+
+.sticker2{
+    top:10%;
+    right:4%;
+}
+
+.sticker3{
+    bottom:10%;
+    left:5%;
+}
+
+.sticker4{
+    bottom:7%;
+    right:5%;
+}
+
+.sticker5{
+    top:45%;
+    left:1%;
+}
+
+.sticker6{
+    top:48%;
+    right:1%;
+}
+
+@keyframes stickerFloat{
+    0%,100%{
+        transform:translateY(0) rotate(-5deg);
+    }
+
+    50%{
+        transform:translateY(-15px) rotate(5deg);
+    }
+}
+
+/* ---------- MUSIC BUTTON ---------- */
+
+.music-button{
+    position:fixed;
+    right:15px;
+    bottom:15px;
+    width:52px;
+    height:52px;
+    border-radius:50%;
+    border:3px solid white;
+    background:#d63384;
+    color:white;
+    font-size:23px;
+    z-index:999;
+    cursor:pointer;
+    box-shadow:0 6px 18px #0003;
+}
+
+/* ---------- PASSWORD BOX ---------- */
+
+.password-info{
+    text-align:center;
+    max-width:600px;
+    margin:20px auto;
+    padding:20px;
+    background:#ffffff99;
+    border-radius:20px;
+    border:2px solid white;
+    line-height:1.7;
+}
+
+/* ---------- HEARTS ---------- */
+
+.heart{
+    position:fixed;
+    bottom:-30px;
+    font-size:25px;
+    animation:heartUp 6s linear forwards;
+    pointer-events:none;
+    z-index:1;
+}
+
+@keyframes heartUp{
+    0%{
+        transform:translateY(0);
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(-110vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+/* ---------- MOBILE ---------- */
+
+@media(max-width:650px){
+
+    h1{
+        font-size:35px;
+    }
+
+    h2{
+        font-size:26px;
+    }
+
+    .subtitle{
+        font-size:16px;
+    }
+
+    .photo-grid{
+        grid-template-columns:1fr;
+    }
+
+    .memory-card img{
+        height:270px;
+    }
+
+    .birthday-text,
+    .final-text{
+        font-size:16px;
+        padding:20px;
+    }
+
+    .balloon{
+        width:85px;
+        height:110px;
+    }
+
+    .always-yours{
+        font-size:37px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- ================= AUDIO ================= -->
+
+<audio id="backgroundMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="popSound">
+    <source src="pop.mp3" type="audio/mpeg">
+</audio>
+
+
+<!-- MUSIC BUTTON -->
+
+<button class="music-button" onclick="toggleMusic()">
+    🎵
+</button>
+
+
+<!-- ================================================= -->
+<!--                    SLIDE 1                        -->
+<!-- ================================================= -->
+
+<section class="slide active" id="slide1">
+
+<div class="sticker sticker1">🧸</div>
+<div class="sticker sticker2">💕</div>
+<div class="sticker sticker3">🎀</div>
+<div class="sticker sticker4">🧸</div>
+
+<h1>Happy 🎂</h1>
+
+<p class="subtitle">
+
+Merii Moniiii ❤️🥹
+
+<br>
+
+Aaj ka din thoda sa special hai...
+
+kyunki aaj ka din meri favourite person ke naam hai 🧸💕
+
+</p>
+
+<img src="photo1.jpg" class="main-photo">
+
+<p class="subtitle">
+
+Thoda sa aur surprise dekhna hai? 👀❤️
+
+<br>
+
+Toh niche wala button dabao...
+
+</p>
+
+<button class="btn" onclick="nextSlide(2)">
+💌 Open My Surprise
+</button>
+
+</section>
+
+
+<!-- ================================================= -->
+<!--                    SLIDE 2                        -->
+<!-- ================================================= -->
+
+<section class="slide" id="slide2">
+
+<div class="sticker sticker1">🎀</div>
+<div class="sticker sticker2">🧸</div>
+<div class="sticker sticker3">💕</div>
+
+<h2>🎈 4 Balloons For You 🎈</h2>
+
+<p class="subtitle">
+
+Har balloon ke andar tumhare liye ek special word hai ❤️
+
+<br>
+
+Sabko pop karna hai 😌👇
+
+</p>
+
+
+<div class="balloon-area">
+
+
+<div class="balloon-box" onclick="popBalloon(1)">
+
+<div class="balloon b1" id="balloon1"></div>
+
+<div class="balloon-word" id="word1">
+LOVE ❤️
+</div>
+
+</div>
+
+
+<div class="balloon-box" onclick="popBalloon(2)">
+
+<div class="balloon b2" id="balloon2"></div>
+
+<div class="balloon-word" id="word2">
+SMILE 😊
+</div>
+
+</div>
+
+
+<div class="balloon-box" onclick="popBalloon(3)">
+
+<div class="balloon b3" id="balloon3"></div>
+
+<div class="balloon-word" id="word3">
+CARE 🫶
+</div>
+
+</div>
+
+
+<div class="balloon-box" onclick="popBalloon(4)">
+
+<div class="balloon b4" id="balloon4"></div>
+
+<div class="balloon-word" id="word4">
+FOREVER ♾️
+</div>
+
+</div>
+
+
+</div>
+
+
+<div id="balloonMessage">
+
+✨ Sab balloons pop ho gaye ✨
+
+<br><br>
+
+Chaar balloons toh sirf bahana the...
+
+asli surprise toh abhi baaki hai meri Moniiii 🥹❤️
+
+<br><br>
+
+Tumhari smile, tumhari care aur hamari memories...
+
+sab mere liye bahut special hain 🧸💕
+
+</div>
+
+
+<button class="btn" id="slide3Button"
+style="display:none"
+onclick="nextSlide(3)">
+
+💖 Next Memory
+
+</button>
+
+</section>
+
+
+<!-- ================================================= -->
+<!--                    SLIDE 3                        -->
+<!-- ================================================= -->
+
+<section class="slide" id="slide3">
+
+<div class="sticker sticker1">🧸</div>
+<div class="sticker sticker2">💕</div>
+
+<h2>💗 Our Beautiful Memories 💗</h2>
+
+
+<div class="photo-grid">
+
+
+<div class="memory-card">
+<img src="photo2.jpg">
+<p>
+Ye photo dekhte hi tumhari smile yaad aa jaati hai 🥹❤️
+</p>
+</div>
+
+
+<div class="memory-card">
+<img src="photo3.jpg">
+<p>
+Tumhari ek smile mera pura mood change kar sakti hai 😭💕
+</p>
+</div>
+
+
+<div class="memory-card">
+<img src="photo4.jpg">
+<p>
+Hamari ye memory mere liye genuinely bahut special hai 🫶✨
+</p>
+</div>
+
+
+<div class="memory-card">
+<img src="photo5.jpg">
+<p>
+Kitne bhi moments aaye, ye wala hamesha yaad rahega ❤️
+</p>
+</div>
+
+
+<div class="memory-card">
+<img src="photo6.jpg">
+<p>
+Tumhare saath normal sa moment bhi special ban jaata hai 🥹🌸
+</p>
+</div>
+
+
+<div class="memory-card">
+<img src="photo7.jpg">
+<p>
+Bas aise hi hamesha smile karti rehna meri Moniiii 😭❤️
+</p>
+</div>
+
+
+<div class="memory-card">
+<img src="photo8.jpg">
+<p>
+Ye wali memory dekh kar automatically smile aa jaati hai 😂💕
+</p>
+</div>
+
+
+<div class="memory-card">
+<img src="photo9.jpg">
+<p>
+Our little memories are actually my favourite memories 🫶💗
+</p>
+</div>
+
+
+</div>
+
+
+<div class="birthday-text">
+
+🎂💗 <b>Happy Birthday Merii Moniiii</b> 💗🎂
+
+<br><br>
+
+Aaj tumhara birthday hai aur honestly mujhe bas itna kehna hai
+ki tumhari smile hamesha aise hi bani rahe 🥹❤️
+
+<br><br>
+
+Tumhare saath bitaya hua har chhota sa moment mere liye special hai.
+Kabhi hum haste hain 😂,
+kabhi pagal jaise ladte hain,
+kabhi ek dusre ko irritate karte hain,
+lekin end mein phir bhi ek dusre ke saath hi rehna hota hai 🫶
+
+<br><br>
+
+Bas aaj ke din meri taraf se ek hi wish hai —
+
+tum hamesha khush raho,
+smile karti raho,
+aur tumhari life mein bahut saari beautiful memories aayein 🌸✨
+
+<br><br>
+
+<b>
+Happy Birthday once again meri Moniiii ❤️🎂🧸
+</b>
+
+</div>
+
+
+<button class="btn locked" onclick="unlockSlide(4)">
+🔒 Private Message — Slide 4
+</button>
+
+</section>
+
+
+<!-- ================================================= -->
+<!--                    SLIDE 4                        -->
+<!-- ================================================= -->
+
+<section class="slide" id="slide4">
+
+<div class="sticker sticker1">🧸</div>
+<div class="sticker sticker2">🎀</div>
+<div class="sticker sticker3">💕</div>
+
+<h2>🔐 Private Message For You</h2>
+
+
+<div class="password-info">
+
+🔒 Ye private slide hai.
+
+<br>
+
+Password daalne ke baad hi next memory open hogi ❤️
+
+</div>
+
+
+<div class="photo-grid">
+
+
+<div class="memory-card">
+<img src="photo10.jpg">
+<p>
+Ye moment mere dil ke bahut close hai ❤️🥹
+</p>
+</div>
+
+
+<div class="memory-card">
+<img src="photo11.jpg">
+<p>
+Tumhare saath har memory apne aap special ho jaati hai 🫶
+</p>
+</div>
+
+
+<div class="memory-card">
+<img src="photo12.jpg">
+<p>
+Hamari ye smile wali memories kabhi old nahi hongi 😭💕
+</p>
+</div>
+
+
+<div class="memory-card">
+<img src="photo13.jpg">
+<p>
+Bas isi tarah ek dusre ko pagal banate rehna hai 😂❤️
+</p>
+</div>
+
+
+<div class="memory-card">
+<img src="photo14.jpg">
+<p>
+You're genuinely one of my favourite people 🥹💗
+</p>
+</div>
+
+
+<div class="memory-card">
+<img src="photo15.jpg">
+<p>
+Ye memory bhi forever favourite rahegi 🧸💕
+</p>
+</div>
+
+
+</div>
+
+
+<div class="birthday-text">
+
+🎂❤️ <b>Happy Birthday meri Moniiii</b> ❤️🎂
+
+<br><br>
+
+Pata hai, kabhi kabhi hum dono ki conversations bilkul
+pagalpanti level ki hoti hain 😂😂
+
+aur kabhi hum bina kuch bole bhi ek dusre ko samajh jaate hain 🥹
+
+<br><br>
+
+Mujhe hamari ye chhoti chhoti cheezein sabse zyada achhi lagti hain.
+
+Random baatein,
+random fights,
+random hasi
+aur random memories...
+
+sab kuch apne aap mein special hai ❤️
+
+<br><br>
+
+Bas meri wish hai ki tumhari life mein happiness kabhi kam na ho.
+
+Jo bhi tum chahti ho,
+woh tumhe mile aur tum hamesha smile karti raho 🌸✨
+
+<br><br>
+
+<b>
+Happy Birthday meri special Moniiii 🥹❤️🎂
+</b>
+
+</div>
+
+
+<div class="always-yours">
+Always Yours ❤️
+</div>
+
+
+<button class="btn locked" onclick="unlockSlide(5)">
+🔒 Next Private Memory
+</button>
+
+</section>
+
+
+<!-- ================================================= -->
+<!--                    SLIDE 5                        -->
+<!-- ================================================= -->
+
+<section class="slide" id="slide5">
+
+<div class="sticker sticker1">💕</div>
+<div class="sticker sticker2">🧸</div>
+
+<h2>💞 A Little Forever Wish 💞</h2>
+
+
+<div class="photo-grid">
+
+
+<div class="memory-card">
+<img src="photo16.jpg">
+<p>
+One beautiful memory ❤️
+</p>
+</div>
+
+
+<div class="memory-card">
+<img src="photo17.jpg">
+<p>
+One beautiful smile 🥹
+</p>
+</div>
+
+
+<div class="memory-card">
+<img src="photo18.jpg">
+<p>
+One more reason to smile 💕
+</p>
+</div>
+
+
+<div class="memory-card">
+<img src="photo19.jpg">
+<p>
+And one memory to keep forever 🫶
+</p>
+</div>
+
+
+</div>
+
+
+<div class="final-text">
+
+Kabhi socha nahi tha ki itni saari chhoti chhoti memories
+milkar itni beautiful story bana dengi 🥹❤️
+
+<br><br>
+
+Bas life mein chahe kitne bhi ups and downs aaye,
+hum dono hamesha ek dusre ke liye respect,
+care aur happiness banaye rakhein 🫶
+
+<br><br>
+
+Aaj birthday par bas ek simple si wish hai —
+
+aane wale time mein bhi bahut saari hasi,
+bahut saari memories aur bahut saare beautiful moments milein ✨
+
+<br><br>
+
+Aur haan...
+
+hamari pagalpan wali comedy kabhi band nahi honi chahiye 😂😂❤️
+
+</div>
+
+
+<button class="btn locked" onclick="unlockSlide(6)">
+🔒 Continue The Story
+</button>
+
+</section>
+
+
+<!-- ================================================= -->
+<!--                    SLIDE 6                        -->
+<!-- ================================================= -->
+
+<section class="slide" id="slide6">
+
+<div class="sticker sticker1">🧸</div>
+<div class="sticker sticker2">💕</div>
+<div class="sticker sticker3">🎀</div>
+
+<h2>🌸 One More Little Surprise 🌸</h2>
+
+
+<div class="final-text">
+
+Kabhi kabhi life mein kuch log aise mil jaate hain
+jinke saath normal moments bhi memories ban jaate hain 🥹❤️
+
+<br><br>
+
+Hamari story mein bhi serious moments hain,
+cute moments hain aur sabse zyada...
+
+<b>pagalpan wale moments hain 😂😂</b>
+
+<br><br>
+
+Aur honestly wahi moments sabse zyada yaad rehte hain.
+
+<br><br>
+
+So today, on your birthday,
+I just want to say...
+
+<br><br>
+
+<b>
+Keep smiling, keep shining and keep being YOU ❤️✨
+</b>
+
+<br><br>
+
+Tumhari smile hamesha priceless rahe 🧸💕
+
+</div>
+
+
+<button class="btn locked" onclick="unlockSlide(7)">
+🔒
